@@ -22,9 +22,9 @@ const copyUPI = () => {
     const upiElement = document.getElementById('upi-id');
     if (upiElement) {
         navigator.clipboard.writeText(upiElement.textContent).then(() => {
-            alert('UPI ID copied successfully!');
+            alert('COPIED Thanks!');
         }).catch(() => {
-            alert('Error copying UPI ID');
+            alert('Error copying');
         });
     }
 };
