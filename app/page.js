@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
+const skills = ['Networking', 'Python Fundamentals', 'Operating Systems', 'Project Management', 'Analysis'];
+const slideImages = ['/images/network.png', '/images/py.jpeg', '/images/os.jpg', '/images/pm.jpg'];
+
 export default function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [popupOpen, setPopupOpen] = useState(false);
@@ -10,9 +13,6 @@ export default function Portfolio() {
   const [typedText, setTypedText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
-
-  const skills = ['Networking', 'Python Fundamentals', 'Operating Systems', 'Project Management', 'Analysis'];
-  const slideImages = ['/images/network.png', '/images/py.jpeg', '/images/os.jpg', '/images/pm.jpg'];
 
   // Typing effect
   useEffect(() => {
@@ -78,7 +78,7 @@ export default function Portfolio() {
         <br /><br /><br /><br /><br />
         <div className="intro">
           <h2>
-            Hey, I'm <span className="name">"PAVEL - TECH TRIBE"</span>, a growing cyber expert skilled in<br />
+            Hey, I&apos;m <span className="name">&quot;PAVEL - TECH TRIBE&quot;</span>, a growing cyber expert skilled in<br />
             <span className="wrd">{typedText}</span>
           </h2>
           <p className="home-txt">
@@ -141,7 +141,7 @@ export default function Portfolio() {
           </div>
           <div className="service-card">
             <h3><b>Driver</b></h3><br />
-            <p>Looking for category B driver? I've got you covered.</p>
+            <p>Looking for category B driver? I&apos;ve got you covered.</p>
           </div>
         </div>
       </section>
@@ -202,8 +202,8 @@ export default function Portfolio() {
             <p>My dream is to revolutionize the tech industry by harnessing artificial intelligence and cutting-edge technologies.</p>
           </div>
           <div className="know-card">
-            <h3><b>What I'm Doing Now ?</b></h3><br />
-            <p>I'm working as a self-employed maintenance technician, repairing computer systems and setting up networks for various businesses.</p>
+            <h3><b>What I&apos;m Doing Now ?</b></h3><br />
+            <p>I&apos;m working as a self-employed maintenance technician, repairing computer systems and setting up networks for various businesses.</p>
           </div>
         </div>
       </section>
@@ -216,16 +216,16 @@ export default function Portfolio() {
           </a>
         </b></h3>
         <div className="social-media">
-          <a href="https://youtube.com/@techtrib" target="_blank" className="social-icon">
+          <a href="https://youtube.com/@techtrib" target="_blank" rel="noreferrer" className="social-icon">
             <i className="fa-brands fa-youtube"></i>
           </a>
-          <a href="#" target="_blank" className="social-icon">
+          <a href="#" target="_blank" rel="noreferrer" className="social-icon">
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a href="https://telegram.me/tectrib" target="_blank" className="social-icon">
+          <a href="https://telegram.me/tectrib" target="_blank" rel="noreferrer" className="social-icon">
             <i className="fa-brands fa-telegram"></i>
           </a>
-          <a href="https://github.com/gnix45" target="_blank" className="social-icon">
+          <a href="https://github.com/gnix45" target="_blank" rel="noreferrer" className="social-icon">
             <i className="fa-brands fa-github"></i>
           </a>
         </div>
